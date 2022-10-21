@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QWERTY Converter</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+    <div class="text_input">
+    <form class="text_form" action="converter.js">
+        <label>Введите непреобразованный текст:</label><br/>
+        <textarea name="text_input" id="text_input" placeholder="Не более 10000 символов..." maxlength="10000"></textarea>
+        <div class="buttons">
+        <button type="reset" id="delete-code" class="btn-delete">Очистить</button>
+        <button type="submit" id="submit-code" class="btn-submit">Преобразовать</button>
+        </div>
+    </form>
+    </div>
+    <div class="switch">
+        <div  class="Translate-ReverseButton" role="button"></div>
+        <div class="raskladka">
+            <p id="rask">Английская раскладка</p>
+        </div>
+    </div>
+    <div class="text_output">
+    <div class="text_form">
+        <label>Преобразованный текст:</label><br/>
+        <textarea name="text_output" id="text_output" maxlength="10000" readonly></textarea>
+    </div>
+    </div>
+</div>
+<script type="module" src="js/index.js"></script>
+</body>
+</html>
